@@ -1,0 +1,72 @@
+<html>
+<body>
+<style>
+
+.imgheader{
+width:50%;
+margin-bottom:-200px;
+}
+input{
+width:50%;
+border:none;
+background-color:#f1f1f1;
+padding:10px;
+margin:10px;
+font-size:20;}
+
+body{
+}
+
+.reg{
+background-color:green;
+color:white;
+opacity:0.8;
+}
+
+.reg:hover{
+opacity:1;}
+
+</style>
+
+
+
+<script>
+ function validate()
+ {
+ var a;
+ a=document.getElementById("names").value;
+ if(a==""){
+ alert("Name is Empty!");
+ }
+  
+ }
+
+
+</script>
+
+
+<div><center><img style="width:20%; margin:-100px " src="rot.jpg"></center></div>
+<br><br><hr>
+
+<div class="container">
+<form onsubmit="return validate()">
+<br><br><br><center>
+<input type=text id="names" placeholder=Name></input>
+<input type=text placeholder=Age></input>
+<input type=text placeholder=Locality></input>
+<input type=text placeholder="Gender"></input>
+<input id="bd" type=text placeholder="Blood Group"></input><br>
+
+
+<br>
+<div>
+<input type="checkbox" style="width:3%" > <label id="hilabel" style="font-size:25">Can we contact you during emergencies?</label>
+</div></center>
+<center><input class="reg" type="submit" value="Register" onclick="return validate()"></input></center>
+</form>
+</div>
+
+<p id="id1"></p>
+
+</body>
+</html>
